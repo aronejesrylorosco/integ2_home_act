@@ -2,19 +2,54 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    background-color: #363636; /* Dark background */
+    color: #ffffff; /* Light text color */
   }
   
+  /* User Profile Styling */
+  .user-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #0c5acf; /* Green border for profile pic */
+  }
+  
+  .profile-info {
+    text-align: left; /* Align profile info to the left */
+  }
+  
+  .profile-info h2 {
+    margin-bottom: 5px;
+    color: #ffffff; /* Ensure header is visible */
+  }
+  
+  /* Post Form Styling */
   .post-form {
     margin-bottom: 20px;
   }
   
   .post-form textarea {
-    width: 100%;
+    width: 95%;
     height: 100px;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Darker border for dark mode */
     resize: vertical;
+    border-radius: 5px; /* Add slight rounding */
+    background-color: #1d1d1d; /* Dark textarea background */
+    color: #ffffff; /* Light text for textarea */
+    transition: border-color 0.3s;
+  }
+  
+  .post-form textarea:focus {
+    border-color: #0c5acf; /* Highlight border on focus */
   }
   
   .post-form input[type="file"] {
@@ -23,17 +58,31 @@
   
   .post-form button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #0c5acf;
     color: white;
     border: none;
     cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition effects */
   }
   
+  .post-form button:hover {
+    background-color: #0c5acf; /* Darken button on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  /* Post Styling */
   .post {
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Darker border for posts */
     padding: 15px;
     margin-bottom: 15px;
-    background-color: #f9f9f9;
+    background-color: #1e1e1e; /* Dark background for posts */
+    border-radius: 5px; /* Rounded corners */
+    transition: box-shadow 0.3s; /* Add shadow effect */
+  }
+  
+  .post:hover {
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1); /* Light shadow on hover */
   }
   
   .post-content {
@@ -43,8 +92,10 @@
   .post-image {
     max-width: 100%;
     height: auto;
+    border-radius: 5px; /* Rounded corners */
   }
   
+  /* Post Actions Styling */
   .post-actions {
     display: flex;
     justify-content: space-between;
@@ -53,8 +104,17 @@
   
   .post-actions button {
     padding: 5px 10px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #333; /* Dark button background */
+    border: 1px solid #555; /* Darker border */
     margin-right: 5px;
     cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Add transition effects */
+    color: #ffffff; /* Light text for buttons */
   }
+  
+  .post-actions button:hover {
+    background-color: #444; /* Lighten button on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+  }
+  
